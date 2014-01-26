@@ -79,4 +79,3 @@ class PaginationExtension extends \Twig_Extension
         return 'tadcka_pagination_extension';
     }
 }
- 

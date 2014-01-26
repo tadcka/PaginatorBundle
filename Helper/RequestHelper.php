@@ -70,4 +70,3 @@ class RequestHelper
         return $parameters;
     }
 }
- 
