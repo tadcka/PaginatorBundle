@@ -60,11 +60,11 @@ class RequestHelper
      */
     private function getParameters()
     {
-        $routerParameters = $this->request->attributes->get('_route_params');
+        $routeParameters = $this->request->attributes->get('_route_params');
         $parameters = $this->request->query->all();
 
-        if ($routerParameters) {
-            $parameters = array_merge($routerParameters, $parameters);
+        if ($routeParameters) {
+            $parameters = array_merge($routeParameters, $parameters);
         }
 
         return $parameters;
