@@ -18,9 +18,8 @@
         "tadcka/paginator": ">=v1.0.0"
     },
     "autoload": {
-        "psr-0": {
-            "Tadcka\\PaginatorBundle": ""
+        "psr-4": {
+            "Tadcka\\PaginatorBundle\\": ""
         }
-    },
-    "target-dir": "Tadcka/PaginatorBundle"
+    }
 }
