@@ -42,7 +42,7 @@ public function registerBundles()
 
 How use?
 
-### Step 2: How use?
+### Step 3: How use?
 
 Create pagination object:
 
@@ -58,7 +58,7 @@ Render html:
 $paginationHtml = $this->container->get('tadcka_paginator.manager')->getPaginatorHtml($pagination);
 ```
 
-### Step 2: Configuration
+### Step 4: Configuration
 
 ``` yml
 tadcka_paginator:
