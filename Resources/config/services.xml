@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+
+<!--
+ This file is part of the Tadcka package.
+
+ (c) Tadcka <tadcka89@gmail.com>
+
+ For the full copyright and license information, please view the LICENSE
+ file that was distributed with this source code.
+-->
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+
+    <parameters>
+        <parameter key="tadcka_paginator.manager.class">Tadcka\PaginatorBundle\Manager\PaginatorManager</parameter>
+        <parameter key="tadcka_paginator.twig.pagination_extension.class">Tadcka\PaginatorBundle\Twig\PaginationExtension</parameter>
+    </parameters>
+
+    <services>
+
+        <!--Paginator manager-->
+        <service id="tadcka_paginator.manager" class="%tadcka_paginator.manager.class%" public="true">
+            <argument type="service" id="templating" />
+            <argument>%tadcka_paginator.pagination_class%</argument>
+            <argument>%tadcka_paginator.pagination_links_class%</argument>
+            <argument>%tadcka_paginator.pagination_link_class%</argument>
+            <argument>%tadcka_paginator.max_near_pages%</argument>
+        </service>
+
+        <!--Pagination twig extension-->
+        <service id="tadcka_paginator.twig.pagination_extension" class="%tadcka_paginator.twig.pagination_extension.class%" public="false">
+            <tag name="twig.extension" />
+            <argument type="service" id="router" />
+        </service>
+
+    </services>
+
+</container>
