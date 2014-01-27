@@ -1,4 +1,4 @@
-{% if pagination is not null and pagination.getTotalPages() > 0 %}
+{% if pagination is not null and pagination.getTotalPages() > 1 %}
     {% set route_name = route_name is defined ? route_name : null %}
     {% set route_parameters = route_parameters is defined ? route_parameters : [] %}
     {% set max_near_pages = max_near_pages is defined ? max_near_pages : 2 %}
