@@ -15,7 +15,7 @@ use Symfony\Component\Templating\EngineInterface;
 use Tadcka\Component\Paginator\Pagination;
 
 /**
- * @author Tadas Gliaubicas <tadcka89@gmail.lt>
+ * @author Tadas Gliaubicas <tadcka89@gmail.com>
  *
  * @since 1/26/14 7:52 PM
  */

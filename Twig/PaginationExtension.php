@@ -16,7 +16,7 @@ use Symfony\Component\Routing\RouterInterface;
 use Tadcka\PaginatorBundle\Helper\RequestHelper;
 
 /**
- * @author Tadas Gliaubicas <tadcka89@gmail.lt>
+ * @author Tadas Gliaubicas <tadcka89@gmail.com>
  *
  * @since 1/26/14 5:12 PM
  */
