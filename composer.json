@@ -14,12 +14,17 @@
 	"minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony" : ">=2.2",
-        "tadcka/paginator": ">=v1.0.0"
+        "symfony/framework-bundle" : ">=2.3",
+        "tadcka/paginator": "~1.0"
     },
     "autoload": {
         "psr-4": {
             "Tadcka\\PaginatorBundle\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
         }
     }
 }
